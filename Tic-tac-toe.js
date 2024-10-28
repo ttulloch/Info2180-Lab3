@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    alert('Player X plays first!');
     const squares = document.querySelectorAll('#board div');
     const status = document.getElementById('status');
     const newGameButton = document.querySelector('.btn');
@@ -46,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
       status.textContent = 'Move your mouse over a square and click to play an X or an O.';
       currentPlayer = 'X';
       gameActive = true;
+      alert('Player X plays first!');
     });
   
     function checkWinner(player) {
